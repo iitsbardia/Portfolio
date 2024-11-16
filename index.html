@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardiya Momeni Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen"></div>
+
+  <!-- Hero Section -->
+  <header class="hero fade-in" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <img src="assets/img/profile.jpg" alt="Bardiya Momeni Headshot" class="hero-image">
+        <h1>Bardiya Momeni</h1>
+        <p>Computer Science & Statistics Student | University of Toronto</p>
+        <a href="#about" class="btn primary-btn">Explore My Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in slide-up">
+    <div class="about-container">
+      <div class="glass-card">
+        <h2>About Me</h2>
+        <p>
+          I’m Bardiya Momeni, a double major in Computer Science and Statistics at the University of Toronto,
+          graduating in 2025. I specialize in data science, automation, and software development, supported by
+          certifications from Google IT Automation and Harvard’s Data Science program.
+        </p>
+        <div class="certifications">
+          <img src="assets/icons/Utoronto.png" alt="University of Toronto" class="cert-logo">
+          <img src="assets/icons/harvardx.png" alt="Harvard" class="cert-logo">
+          <img src="assets/icons/google.png" alt="Google" class="cert-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in slide-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 100%;"></div>
+        </div>
+        <button class="toggle-btn">Show More</button>
+        <ul class="toggle-content">
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Bootstrap</li>
+          <li>RESTful APIs</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 100%;"></div>
+        </div>
+        <button class="toggle-btn">Show More</button>
+        <ul class="toggle-content">
+          <li>Data Analysis (Pandas, NumPy)</li>
+          <li>Machine Learning (TensorFlow, Scikit-learn)</li>
+          <li>Data Visualization (Matplotlib, Seaborn)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Data</h3>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 85%;"></div>
+        </div>
+        <button class="toggle-btn">Show More</button>
+        <ul class="toggle-content">
+          <li>SQL</li>
+          <li>Big Data (Apache Spark, Hadoop)</li>
+          <li>Data Warehousing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in slide-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/project1.jpg" alt="Sales Data Analysis">
+        <h3>Sales Data Analysis</h3>
+        <p>
+          Analyzed over 1 million rows of sales data using Python (Pandas, NumPy), uncovering actionable trends 
+          that increased revenue by 15%. Built visual dashboards with Matplotlib and Seaborn for insights.
+        </p>
+        <a href="https://github.com/iitsbardia/sales-analysis" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/project2.jpg" alt="Dentalist">
+        <h3>Dentalist.ca</h3>
+        <p>
+          Developed a professional dental platform, connecting over 500+ dental professionals with patients. 
+          Designed the frontend using React and Bootstrap and ensured seamless backend functionality with Node.js 
+          and MongoDB.
+        </p>
+        <a href="https://dentalist.ca" target="_blank" class="project-link">Visit Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in slide-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Bardiya Momeni. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
