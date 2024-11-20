@@ -350,6 +350,10 @@
     margin-bottom: 20px;
     color: var(--text-color);
   }
+
+  .project-buttons {
+    color: red;
+  }
   
   .project-buttons a {
     display: inline-block;
