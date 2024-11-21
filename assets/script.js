@@ -1,80 +1,39 @@
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      // Smooth scroll to the section
-      window.scrollTo({
-          top: targetSection.offsetTop - 50,
-          behavior: 'smooth'
-      });
+// Smooth Scroll to Contact Section
+document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
   });
 });
 
-// Sticky Navbar Effect
-const navbar = document.querySelector('.navbar');
-const heroSection = document.querySelector('.hero');
+// Form Validation and Success Animation
+document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > heroSection.offsetHeight - 100) {
-      navbar.classList.add('scrolled');
-  } else {
-      navbar.classList.remove('scrolled');
+  // Get input values
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const message = document.querySelector('textarea[name="message"]').value;
+
+  // Simple validation
+  if (name === "" || email === "" || message === "") {
+      alert("Please fill out all fields before submitting.");
+      return;
   }
-});
 
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+  // Simulating form submission (you would replace this with your actual backend logic)
+  const form = event.target;
+  form.innerHTML = "<div class='success-message'>Your message has been sent successfully! 🎉</div>";
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  menuToggle.classList.toggle('open');
-});
-
-// Hero Animation on Load
-window.addEventListener('load', () => {
-  const heroContent = document.querySelector('.hero-content');
-  heroContent.style.opacity = 0;
-  heroContent.style.transform = 'translateY(50px)';
-
+  // Optionally reset the form after a few seconds
   setTimeout(() => {
-      heroContent.style.transition = 'opacity 1s ease, transform 1s ease';
-      heroContent.style.opacity = 1;
-      heroContent.style.transform = 'translateY(0)';
-  }, 300);
-});
-
-// Sticky Navbar
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuToggle.classList.toggle('open');
-});
-
-// Open project modal
-function openModal(project) {
-  document.getElementById(project + '-modal').style.display = 'flex';
-}
-
-// Close project modal
-function closeModal(project) {
-  document.getElementById(project + '-modal').style.display = 'none';
-}
-
-// Close modal when clicking outside
-window.addEventListener('click', (event) => {
-  if (event.target.classList.contains('project-modal')) {
-      closeModal(event.target.id.replace('-modal', ''));
-  }
+      form.reset();
+      form.innerHTML = `
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+      `;
+  }, 4000);
 });

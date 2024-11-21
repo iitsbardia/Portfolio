@@ -1,167 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bardiya Momeni | Portfolio</title>
-    <link rel="stylesheet" href="/portfolio/styles/style.css"> <!-- Correct path for styles -->
-    <link rel="icon" href="/portfolio/assets/favicon.ico"> <!-- Example favicon -->
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body>
-
-    <!-- Navbar Section -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="container">
                 <a href="#home" class="logo">Bardiya Momeni</a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Bardiya Momeni</h1>
-            <p>Computer Science & Statistics Student | University of Toronto</p>
-            <a href="#projects" class="cta-button">Explore My Work</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate Computer Science and Statistics student at the University of Toronto. I love exploring technology and solving real-world problems using data and software development. My goal is to develop innovative solutions that make a difference.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>R</li>
-                        <li>C++</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <ul>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>SQL</li>
-                        <li>Tableau</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-container">
-                <!-- Project 1 -->
-                <div class="project">
-                    <img src="/portfolio/assets/dentalist.png" alt="Dentalist Project">
-                    <h3>Dentalist Website</h3>
-                    <p>A fully functional website for a dental clinic with appointment scheduling, client login, and a modern UI.</p>
-                    <a href="https://westendentalist.ca" target="_blank">View Project</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="project">
-                    <img src="/portfolio/assets/flappy-bird.png" alt="Flappy Bird Game">
-                    <h3>Flappy Bird Game (Python)</h3>
-                    <p>Python-based Flappy Bird clone using Pygame with full game mechanics and pixel-perfect collision detection.</p>
-                    <a href="https://github.com/iitsbardia/LearnLogic/tree/main/Flappy%20Bird" target="_blank">View on GitHub</a>
-                </div>
-                <!-- Project 3 -->
-                <div class="project">
-                    <img src="/portfolio/assets/chatbot.png" alt="Interactive Chatbot">
-                    <h3>Interactive Chatbot</h3>
-                    <p>AI-powered chatbot that understands and responds to user queries using natural language processing.</p>
-                    <a href="https://github.com/iitsbardia/chatbot" target="_blank">View on GitHub</a>
-                </div>
+            <div class="hero-content">
+                <h1>Hi, I'm Bardiya Momeni</h1>
+                <p>Computer Science & Statistics Student | University of Toronto</p>
+                <a href="#projects" class="cta-button">Explore My Work</a>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>University of Toronto</strong> — BSc in Computer Science & Statistics (2022 - Present)</li>
-                <li><strong>Islamic Azad University (IAU SRB)</strong> — Computer Science (2019 - 2021)</li>
-            </ul>
+        <h2 class="section-header">Education</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>University of Toronto</h3>
+                <p>BSc in Computer Science & Statistics (2022 - Present)</p>
+                <a href="https://www.utoronto.ca/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/University_of_Toronto_seal.svg/1200px-University_of_Toronto_seal.svg.png" alt="University of Toronto" class="university-logo"/>
+                </a>
+            </div>
+
+            <div class="education-item">
+                <h3>Islamic Azad University (IAU SRB)</h3>
+                <p>Computer Science (2019 - 2021)</p>
+                <a href="https://www.iau.ir/en" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Islamic_Azad_University_Logo.png" alt="IAU SRB" class="university-logo"/>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates">
-        <div class="container">
-            <h2>Certificates</h2>
-            <ul>
-                <li><strong>Data Science with Python</strong> — Coursera</li>
-                <li><strong>Full Stack Web Development</strong> — FreeCodeCamp</li>
-                <li><strong>Machine Learning</strong> — Stanford University (Coursera)</li>
-            </ul>
+<!-- Certificates Section -->
+<section id="certificates">
+    <h2 class="section-header">Certificates</h2>
+    <div class="certificates-list">
+        <!-- Data Science with Python Certificate -->
+        <div class="certificate-item github-logo">
+            <h3>Data Science with Python</h3>
+            <p>Coursera</p>
+            <a href="path_to_your_certificate/data_science_with_python.pdf" target="_blank">View Certificate</a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out for collaborations, inquiries, or just a chat!</p>
-            <form action="mailto:your.email@example.com" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <!-- Full Stack Web Development Certificate -->
+        <div class="certificate-item github-logo">
+            <h3>Full Stack Web Development</h3>
+            <p>FreeCodeCamp</p>
+            <a href="path_to_your_certificate/full_stack_web_development.pdf" target="_blank">View Certificate</a>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Bardiya Momeni. All rights reserved.</p>
+        <!-- Machine Learning Certificate -->
+        <div class="certificate-item github-logo">
+            <h3>Machine Learning</h3>
+            <p>Stanford University (Coursera)</p>
+            <a href="path_to_your_certificate/machine_learning.pdf" target="_blank">View Certificate</a>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Link to script.js -->
-    <script src="/portfolio/script.js"></script> <!-- Correct path for script -->
+
+
+   <!-- Contact Section -->
+<section id="contact">
+    <h2 class="section-header">Contact</h2>
+    <div class="contact-form">
+        <form action="mailto:your.email@example.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <script src="assets/script.js"></script>
 </body>
-
 </html>
