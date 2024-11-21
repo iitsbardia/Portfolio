@@ -1,168 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bardiya Momeni Portfolio</title>
+  <title>Bardiya Momeni | Portfolio</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font">
 </head>
 <body>
-
-
-  <!-- Hero Section -->
-  <header class="hero" id="home">
-    <!-- Content Frame -->
-    <div class="hero-frame">
-      <div class="hero-content">
-        <h1 class="hero-title">Hi, I'm <span class="highlight">Bardiya Momeni</span></h1>
-        <p class="hero-subtitle">Computer Science & Statistics Student | University of Toronto</p>
-        <div class="hero-buttons">
-          <a href="#about" class="btn primary-btn">Explore My Work</a>
-          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+  <header>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
-    </div>
-  </header>
-  
-  
-  
+    </nav>
+</header>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-container">
-      <!-- Left Side: Profile Image -->
-      <div class="about-image">
-        <img src="assets/img/profile.jpg" alt="Bardiya Momeni" class="profile-pic" />
-      </div>
-  
-      <!-- Right Side: About Text -->
-      <div class="about-text">
-        <h2 class="about-title">About Me</h2>
-        <p>
-          Hi, I'm <strong>Bardiya Momeni</strong>, a <strong>Computer Science</strong> and 
-          <strong>Statistics</strong> student at the <strong>University of Toronto</strong>. I love 
-          blending creativity with technology to craft innovative solutions for real-world problems.
-        </p>
-        <p>
-          I'm proud to hold certifications from <strong>Harvard</strong>
-          <a href="assets/certifications/harvard.pdf" target="_blank" class="inline-link">[View Certificate]</a> 
-          and <strong>Google</strong>
-          <a href="assets/certifications/google.pdf" target="_blank" class="inline-link">[View Certificate]</a>.
-        </p>
-        <p>
-          Beyond coding, I explore new tools, analyze data, and collaborate on exciting projects to 
-          push the boundaries of innovation.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <div class="skills-container">
-      <h2 class="section-title">My Skills</h2>
-  
-      <div class="skills-grid">
-        <!-- Programming Languages -->
-        <div class="skill-category">
-          <h3 class="category-title">Programming Languages</h3>
-          <div class="skill-items">
-            <span class="skill-circle">Python</span>
-            <span class="skill-circle">JavaScript</span>
-            <span class="skill-circle">R</span>
-            <span class="skill-circle">C++</span>
-            <span class="skill-circle">C#</span>
+  <section id="home" class="hero">
+      <div class="container">
+          <div class="hero-content">
+              <h1>Hi, I'm Bardiya Momeni</h1>
+              <p>Computer Science & Statistics Student | University of Toronto</p>
+              <a href="#projects" class="cta-button">Explore My Work</a>
           </div>
-        </div>
-  
-        <!-- Web Development -->
-        <div class="skill-category">
-          <h3 class="category-title">Web Development</h3>
-          <div class="skill-items">
-            <span class="skill-circle">HTML</span>
-            <span class="skill-circle">CSS</span>
-            <span class="skill-circle">React</span>
-            <span class="skill-circle">Node.js</span>
-          </div>
-        </div>
-  
-        <!-- Data Analysis -->
-        <div class="skill-category">
-          <h3 class="category-title">Data Analysis</h3>
-          <div class="skill-items">
-            <span class="skill-circle">Pandas</span>
-            <span class="skill-circle">SQL</span>
-            <span class="skill-circle">Tableau</span>
-            <span class="skill-circle">NumPy</span>
-            <span class="skill-circle">Matplotlib</span>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <div class="projects-container">
-      <h2 class="section-title">My Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <img src="assets/img/project2.jpg" alt="Dentalist Project" class="project-image">
-          <div class="project-info">
-            <h3>Dentalist</h3>
-            <p>A professional website for dental services with modern booking features.</p>
-            <div class="project-buttons">
-              <a href="https://dentalist.ca" target="_blank" class="primary-btn">View Website</a>
+  <section id="about">
+      <div class="container">
+          <h2>About Me</h2>
+          <p>I am a dedicated and ambitious Computer Science & Statistics student at the University of Toronto with a strong foundation in software development and data analysis.</p>
+          <p>Previously, I studied at the Islamic Azad University, Science and Research Branch (IAU SRB), where I completed my first year of coursework in Computer Science. Transitioning to the University of Toronto allowed me to expand my skills and take on more challenging projects.</p>
+          <p>Beyond academics, I enjoy exploring emerging technologies, building innovative solutions, and collaborating with talented individuals to create impactful work.</p>
+      </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Skill 1: Programming Languages -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>R</li>
+                    <li>C#</li>
+                </ul>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <!-- Project 2 -->
-        <div class="project-card">
-          <img src="assets/img/project1.jpg" alt="Data Insights Project" class="project-image">
-          <div class="project-info">
-            <h3>Data Insights</h3>
-            <p>A data analysis project featuring visualizations and insights using Pandas and Tableau.</p>
-            <div class="project-buttons">
-              <a href="https://github.com/iitsbardia/sales-analysis" target="_blank" class="secondary-btn">View on GitHub</a>
+
+            <!-- Skill 2: Web Development -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
             </div>
-          </div>
+
+            <!-- Skill 3: Data Analysis -->
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Pandas</li>
+                    <li>SQL</li>
+                    <li>NumPy</li>
+                    <li>Tableau</li>
+                    <li>Matplotlib</li>
+                </ul>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
         </div>
-
-      </div>
     </div>
-  </section>
-  
+</section>
 
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <h2 class="section-title">Contact Me</h2>
-      <p>I'd love to hear from you! Feel free to reach out.</p>
-      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="primary-btn">Send Message</button>
-      </form>
-      <div class="social-icons">
-        <a href="https://github.com/yourgithub" target="_blank" title="GitHub">
-          <img src="assets/icons/github.png" alt="GitHub" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" title="LinkedIn">
-          <img src="assets/icons/linkedin.png" alt="LinkedIn" class="social-icon">
-        </a>
-        <a href="https://www.youtube.com/@yourchannel" target="_blank" title="YouTube">
-          <img src="assets/icons/youtube.png" alt="YouTube" class="social-icon">
-        </a>
+<section id="projects">
+  <div class="container">
+      <h2>Projects</h2>
+      <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project" onclick="openModal('project1')">
+              <img src="images/dentalist.png" alt="Dentalist Project">
+              <h3>Dentalist Website</h3>
+              <p>A professional website for dental services featuring appointment scheduling.</p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project" onclick="openModal('project2')">
+              <img src="images/flappy-bird.png" alt="Flappy Bird Game">
+              <h3>Flappy Bird Game (Python)</h3>
+              <p>A Flappy Bird clone using Pygame with full game mechanics and interactive gameplay.</p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project" onclick="openModal('project3')">
+              <img src="images/chatbot.png" alt="Interactive Chatbot">
+              <h3>Interactive Chatbot</h3>
+              <p>An AI-powered chatbot capable of answering user queries using NLP techniques.</p>
+          </div>
       </div>
-    </div>
+  </div>
+
+  <!-- Project Modal 1 -->
+  <div id="project1-modal" class="project-modal">
+      <div class="project-modal-content">
+          <button class="close-modal" onclick="closeModal('project1')">X</button>
+          <h3>Dentalist Website</h3>
+          <p>A fully functional website designed for dental services. It includes an appointment scheduler, client login, and a modern UI.</p>
+          <div class="tech-stack">
+              <strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL
+          </div>
+          <button onclick="window.open('https://westendentalist.ca', '_blank')">View Project</button>
+      </div>
+  </div>
+
+  <!-- Project Modal 2 -->
+  <div id="project2-modal" class="project-modal">
+      <div class="project-modal-content">
+          <button class="close-modal" onclick="closeModal('project2')">X</button>
+          <h3>Flappy Bird Game (Python)</h3>
+          <p>A fun, interactive Flappy Bird game built using Python and Pygame. It features basic physics for collision detection and score tracking.</p>
+          <div class="tech-stack">
+              <strong>Technologies:</strong> Python, Pygame
+          </div>
+          <button onclick="window.open('https://github.com/iitsbardia/LearnLogic/tree/main/Flappy%20Bird', '_blank')">View on GitHub</button>
+      </div>
+  </div>
+
+  <!-- Project Modal 3 -->
+  <div id="project3-modal" class="project-modal">
+      <div class="project-modal-content">
+          <button class="close-modal" onclick="closeModal('project3')">X</button>
+          <h3>Interactive Chatbot</h3>
+          <p>This chatbot leverages NLP techniques to process and understand user queries, providing relevant responses.</p>
+          <div class="tech-stack">
+              <strong>Technologies:</strong> Python, NLP, TensorFlow
+          </div>
+          <button onclick="window.open('https://github.com/iitsbardia/chatbot', '_blank')">View on GitHub</button>
+      </div>
+  </div>
+</section>
+
+
+
+  <section id="contact">
+      <div class="container">
+          <h2>Contact</h2>
+          <p>Feel free to reach out for collaborations or inquiries. I'm open to new opportunities and exciting projects.</p>
+          <form action="mailto:your.email@example.com" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit" class="cta-button">Send Message</button>
+          </form>
+          <div class="social-links">
+              <a href="https://github.com/iitsbardia" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/iitsbardia" target="_blank">LinkedIn</a>
+              <a href="https://iitsbardia.github.io/Portfolio/" target="_blank">Portfolio</a>
+          </div>
+      </div>
   </section>
-  
 
+  <footer>
+      <div class="container">
+          <p>&copy; 2024 Bardiya Momeni. All rights reserved.</p>
+      </div>
+  </footer>
 
+  <script src="assets/js/script.js"></script>
 </body>
-</html>
