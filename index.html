@@ -11,16 +11,12 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="#home" class="logo">Bardiya Momeni</a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="menu-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger"></span>
-                </button>
             </div>
         </nav>
     </header>
@@ -29,58 +25,80 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm Bardiya Momeni</h1>
+                <h1 class="typing-animation">Hi, I'm Bardiya Momeni</h1>
                 <p>Computer Science & Statistics Student | University of Toronto</p>
                 <a href="#projects" class="cta-button">Explore My Work</a>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-header">Education</h2>
-        <div class="education-list">
-            <div class="education-item">
+<!-- Education Section -->
+<section id="education">
+    <h2 class="section-header">Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
                 <h3>University of Toronto</h3>
                 <p>BSc in Computer Science & Statistics (2022 - Present)</p>
                 <a href="https://www.utoronto.ca/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/University_of_Toronto_seal.svg/1200px-University_of_Toronto_seal.svg.png" alt="University of Toronto" class="university-logo"/>
-                </a>
-            </div>
-
-            <div class="education-item">
-                <h3>Islamic Azad University (IAU SRB)</h3>
-                <p>Computer Science (2019 - 2021)</p>
-                <a href="https://www.iau.ir/en" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Islamic_Azad_University_Logo.png" alt="IAU SRB" class="university-logo"/>
+                    <img src="assets/icons/Utoronto.png" alt="University of Toronto"/>
                 </a>
             </div>
         </div>
-    </section>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Islamic Azad University (IAU SRB)</h3>
+                <p>Computer Science (2019 - 2021)</p>
+                <a href="https://www.iau.ir/en" target="_blank">
+                    <img src="assets/icons/iauSrb.png" alt="Islamic Azad University"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Allameh Helli</h3>
+                <p>High School Diploma (2016 - 2019)</p>
+                <a href="https://www.helli.edu.ir/" target="_blank">
+                    <img src="assets/icons/sampad.png" alt="Allameh Helli"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Certificates Section -->
 <section id="certificates">
     <h2 class="section-header">Certificates</h2>
     <div class="certificates-list">
         <!-- Data Science with Python Certificate -->
-        <div class="certificate-item github-logo">
-            <h3>Data Science with Python</h3>
-            <p>Coursera</p>
-            <a href="path_to_your_certificate/data_science_with_python.pdf" target="_blank">View Certificate</a>
+        <div class="certificate-item">
+            <img src="assets/icons/harvardx.png"/>
+            <h3>Data Science with Python & R</h3>
+            <p>Harvard</p>
+            <a href="assets/certifications/harvard.pdf">View Certificate</a>
         </div>
 
         <!-- Full Stack Web Development Certificate -->
-        <div class="certificate-item github-logo">
+        <div class="certificate-item">
+            <img src="assets/icons/iauSrb.png"/>
             <h3>Full Stack Web Development</h3>
-            <p>FreeCodeCamp</p>
-            <a href="path_to_your_certificate/full_stack_web_development.pdf" target="_blank">View Certificate</a>
+            <p>IAU SRB</p>
+            <a href="">View Certificate</a>
         </div>
 
         <!-- Machine Learning Certificate -->
-        <div class="certificate-item github-logo">
-            <h3>Machine Learning</h3>
-            <p>Stanford University (Coursera)</p>
-            <a href="path_to_your_certificate/machine_learning.pdf" target="_blank">View Certificate</a>
+        <div class="certificate-item">
+            <img src="assets/icons/google.png"/>
+            <h3>Autmation</h3>
+            <p>Google</p>
+            <a href="assets/certifications/google.pdf" target="_blank">View Certificate</a>
         </div>
     </div>
 </section>
@@ -99,7 +117,6 @@
         </form>
     </div>
 </section>
-
 
     <script src="assets/script.js"></script>
 </body>
