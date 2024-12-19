@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bardiya Momeni | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/iitsbardia/" target="_blank" class="icon linkedin">
+                <img src="images/icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/iitsbardia" target="_blank" class="icon github">
+                <img src="images/icons/github.png" alt="GitHub">
+            </a>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg" style="background-image: url('images/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span>Bardiya Momeni</span></h1>
+            <h2 class="hero-subtitle">Professional Website Developer</h2>
+            <div class="hero-buttons">
+                <a href="#services" class="btn">View My Services</a>
+                <a href="#contact" class="btn btn-alt">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Profile Picture of Bardiya Momeni">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    I am a professional website developer and a Computer Science student at the University of Toronto. I have earned multiple certifications from prestigious institutions, including Google, Harvard, and Stanford.
+                </p>
+                <a href="assets/Resume.pdf" target="_blank" class="btn btn-resume">View My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <p class="services-intro">
+            I provide tailored solutions for your web development needs. Whether you need a brand-new website or updates to an existing one, I'm here to help.
+        </p>
+        <div class="service-cards">
+            <!-- Service 1: Maintenance -->
+            <div class="service-card">
+                <img src="images/icons/maintenance.png" alt="Maintenance Icon" class="service-icon">
+                <h3>Website Maintenance & Updates</h3>
+                <p>
+                    Keep your website updated and running smoothly with professional maintenance services, including design improvements and functionality updates.
+                </p>
+                <a href="#contact" class="btn">Request Maintenance</a>
+            </div>
+    
+            <!-- Service 2: Development -->
+            <div class="service-card">
+                <img src="images/icons/development.png" alt="Development Icon" class="service-icon">
+                <h3>Custom Website Development</h3>
+                <p>
+                    Build a fully custom website starting at $900, including 1 year of free maintenance, ensuring a high-quality, secure, and scalable solution.
+                </p>
+                <a href="#contact" class="btn">Start Development</a>
+            </div>
+    
+            <!-- Service 3: Consultation -->
+            <div class="service-card">
+                <img src="images/icons/consultation.png" alt="Consultation Icon" class="service-icon">
+                <h3>Free Consultation</h3>
+                <p>
+                    Not sure where to start? Book a free 30-minute consultation to discuss your needs and explore the best solutions for your project.
+                </p>
+                <a href="#contact" class="btn">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-bg">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Example Project -->
+            <div class="project-card">
+                <img src="images/projects/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>A brief description of the project goes here.</p>
+                    <a href="https://yourprojectlink.github.io" target="_blank" class="btn">Preview Project</a>
+                </div>
+            </div>
+
+            <!-- Add more projects below -->
+            <div class="project-card">
+                <img src="images/projects/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Another Project</h3>
+                    <p>A brief description of this project goes here.</p>
+                    <a href="https://yoursecondprojectlink.github.io" target="_blank" class="btn">Preview Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">
+            Write a brief message describing your needs, and I will contact you to set up a free consultation session.
+        </p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your needs..." required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
